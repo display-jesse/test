@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+
+  <link rel="stylesheet" href="css/aos.css">
+
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+  <link rel="stylesheet" href="css/flaticon.css">
+  <link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+  <!-- Font Awesome icons (free version)-->
+  <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+
+  <!-- <script ype='text/javascript'>
+    $(window).load(function () {
+      $(function () {
+        $('#playButton').click(function () {
+          $('#homeCarousel').carousel('cycle');
+        });
+        // pause
+        $('#pauseButton').click(function () {
+          $('#homeCarousel').carousel('pause');
+        })
+      });
+    });//]]>  
+
+  </script> -->
+
+  <style>
+    .button {
+      background-color: rgb(132, 204, 103);
+      /* Green */
+      border: none;
+      color: white;
+
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      height: 10%;
+      font-size: 16px;
+      margin: 2%;
+      cursor: pointer;
+    }
+
+    .modal_background {
+      background-image: url("./images/border.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100%;
+      height: 100%;
+    }
+
+    .footer {
+      position: relative;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      color: black;
+      text-align: center;
+    }
+
+    .border {
+      border-left: rgb(132, 204, 103);
+      border-width: thick;
+    }
+
+    .carouselButton {
+      background-color: rgb(132, 204, 103);
+    }
+
+    .controls-top {
+      align-items: center;
+      color: white;
+
+    }
+
+    .carouselCard {
+      width: 375px;
+      height: 500px;
+    }
+
+    .carousel-control-prev {
+      margin-left: -135px;
+    }
+
+    .carousel-control-next {
+      margin-right: -130px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
+    <a class="navbar-brand" href="index.html"><img src="images/ddlogo.png" width="25%" class="img-fluid"></a>
+    <div class="container">
+      <div class="row m-auto">
+        <div class="col-12 w-100 text-left">
+          <a class="navbar-brand w-100" href="index.html" style="font-display: Sans Pro Light;">&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Services</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+          </button>
+        </div>
+        <div class="col-10 w-80 text-center" style="font-size: large;">
+          <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav  text-left" style="color:rgb(128, 240, 15);">
+              <li class="nav-item "><a href="index.html" class="nav-link">Home</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+              <li class="nav-item"><a href="index.html" class="nav-link">Our Offerings</a></li>
+              <li class="nav-item active"><a href="blog-single.html" class="nav-link"
+                  style="color:rgb(128, 240, 15);">Products</a></li>
+              <li class="nav-item dropdown"><a href="classes.html" class="nav-link">Product Packages</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Imagery</a></li>
+                  <li><a href="#">Styles/Principles</a></li>
+                  <li><a href="#">Dimenstion Data Logo</a></li>
+                  <li><a href="#">Client Logo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- END nav -->
+  <br>
+  <!-- Portfolio Section-->
+  <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+      <!-- Portfolio Section Heading-->
+      <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" style="font-size: x-large"></h2>
+      <p style="text-align:center;font-size: large"></p>
+      <!-- Icon Divider-->
+      <div class="divider-custom">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- Portfolio Grid Items-->
+      <div class="row">
+        <!-- Portfolio Item 1-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" src="images/inv.png" />
+            <p style="text-align: center; font-size: large;">Inventory Index</p>
+          </div>
+        </div>
+        <!-- Portfolio Item 2-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" src="images/coming.png" alt="" />
+            <p style="text-align: center;font-size: large;">Timesheet Analysis</p>
+          </div>
+        </div>
+        <!-- Portfolio Item 3-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" src="images/coming.png" alt="" />
+            <p style="text-align: center;font-size: large;">Data Warehousing</p>
+          </div>
+        </div>
+        <!-- Portfolio Item 4-->
+        <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal4">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" src="images/coming.png" alt="" />
+          </div>
+        </div>
+        <!-- Portfolio Item 5-->
+        <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal5">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" src="images/coming.png" alt="" />
+          </div>
+        </div>
+        <!-- Portfolio Item 6-->
+        <div class="col-md-6 col-lg-4">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal6">
+            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+              <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            </div>
+            <img class="img-fluid" src="images/coming.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Carousel-->
+  <div class="container my-4">
+    <div class="heading-section ftco-animate text-center">
+      <h3 class="subheading text-center">Customer Testimonials:</h3>
+    </div>
+
+    <hr class="my-4">
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="carousel-control-prev" style="float: left; color: black;" href="#multi-item-example"
+          data-slide="prev"><i class="fa fa-chevron-left" style="font-size:x-large"></i></a>
+
+        <a class="carousel-control-next" style="float: right; color:black" href="#multi-item-example"
+          data-slide="next"><i class="fa fa-chevron-right" style="font-size:x-large"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <!--Tour de France-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/tdf_yellow.jpg.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">"This technological development will enable a better analysis of the race,
+                    highlight the race tactics, and also show how essential each rider’s role is within his team."</p>
+
+                  <br>
+                  <br>
+
+                  <h5 class="card-title">Christian Prudhomme, </h5>
+                  <h6> Tour de France, Director</h6>
+                  <!-- <a class="btn btn-primary"  style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!--Murray and Roberts-->
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/Murray.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">"Dimension Data has successfully delivered the services and M&R highly recommend
+                    them for Business Intelligence Implementation Services."</p>
+
+                  <br>
+                  <br>
+                  <br>
+
+                  <h5 class="card-title">Hilton Currie, </h5>
+                  <h6> Murray & Roberts, Group IT Executive </h6>
+                  <!-- <a class="btn btn-primary" style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!--SA Tourism-->
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/SA-Tourism.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">“Dimension Data has demonstrated a high quality of service delivery.”</p>
+
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+                  <h5 class="card-title">Thabo Maduna, </h5>
+                  <h6> South African Tourism, General Manager</h6>
+                  <!-- <a class="btn btn-primary " style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <!--ArcelorMittal-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/ArcelorMittal.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">“Our brief was a complicated science endeavour. Dimension Data simplified it and
+                    returned with the concept I<sup>2</sup> and immediately we knew they were onto something.”</p>
+                  <br>
+                  <br>
+                  <h5 class="card-title">Customer, </h5>
+                  <h6> ArcelorMittal</h6>
+                  <!--<a class="btn btn-primary " style="background-color: rgb(132, 204, 103); border:0px; float:right;"> View More</a>-->
+                </div>
+              </div>
+            </div>
+
+            <!--BKB-->
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/BKB-LOGO.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">"Using Power BI solutions residing on Azure, Dimension Data has successfully
+                    enabled BKB to monitor meaningful financial statistics and trends in our business at the touch of a
+                    button, greatly reducing the time required to make and execute important business decisions.”</p>
+
+                  <h5 class="card-title">Jaco Maas, </h5>
+                  <h6 style="display:inline-block"> BKB, Operations Director</h6>
+
+                  <a class="btn btn-primary view-pdf" href="documents/BKB.pdf" target="_blank"
+                    rel="noopener noreferrer"
+                    style="color:white; background-color: rgb(132, 204, 103); border:0px; float:right;">View More
+                  </a>
+
+                   <!-- BKB_Modal -->
+ <!--                 <div id="BKB_Modal" class="portfolio-modal modal fade " tabindex="-1" role="dialog"
+                    aria-labelledby="BKB_Modal" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document"> -->
+
+                      <!-- Modal content-->
+ <!--                      <div class="modal-content">
+
+                        <div class="modal-body">
+
+                          <embed src="documents/BKB.pdf" frameborder="0" width="100%" height="700px">
+
+                          <div class="modal-footer">
+                            <button type=" button" class="btn btn-default "
+                              data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!--MIBFA-->
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/MIBFA-logo.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">"Microsoft SQL Server managed services enables MIBFA’s databases to be available
+                    99.9% of the time.”</p>
+                  <br>
+                  <br>
+                  <br>
+                  <h5 class="card-title">Customer, </h5>
+                  <h6 style="display:inline-block"> MIBFA</h6>
+                  <a class="btn btn-primary view-pdf" href="documents/MIBFA.pdf" target="_blank"
+                    rel="noopener noreferrer"
+                    style="color:white; background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a>
+
+                  <!-- MIBFA_Modal -->
+                  <div id="MIBFA_Modal" class="portfolio-modal modal fade " tabindex="-1" role="dialog"
+                    aria-labelledby="MIBFA_Modal" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+
+                        <div class="modal-body">
+
+                          <embed src="documents/MIBFA.pdf" frameborder="0" width="100%" height="700px">
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+        <!--Third slide-->
+        <!--       <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary" style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary" style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary" style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>-->
+        <!--/.Third slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+
+
+  </div>
+
+  <!-- Portfolio Modals-->
+  <!-- Portfolio Modal 1-->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+        <div class="modal-body text-center modal_background">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 style="color:white">Inventory Index ~ I<sup>2</sup></h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon" style="color:rgb(132, 204, 103);">
+                    <p style="text-align: center;">Your smart inventory system needs an even smarter health tool</p>
+                  </div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image--><video width="400" controls>
+                  <source src="images/inv.mp4" type="video/mp4">
+
+                  Your browser does not support HTML video.
+                </video><!-- Portfolio Modal - Text-->
+
+                <p style="font-style: italic;font-size: medium;">"We used to get lost in the numbers and not know where
+                  to start but the inventory index, as an add-on tool, allowed us to drill down per item which enabled
+                  better decision-making. The product will highlight risk and financially alert the company on
+                  overstock/limited stock. This was a great decision." <br>~ Arcelor Mittal</p>
+                <br>
+                <p style="text-align: left;">
+                  Our external health forensics tool will enhance your current inventory management system and improve
+                  operational efficiencies. It uses actual data from ERP or inventory databases and allows you to run
+                  day-to-day operations more effectively since:
+                  <br><br>
+                  • It is a purely mathematical system that assigns your organisation a unique inventory benchmark based
+                  on historical data. This data encompasses average lead times, actual consumption time, order
+                  frequencies per line item, and worst-case scenarios.
+                  <br>
+                  • Set parameters are used to conduct a health check on your inventory without the need for manual
+                  input, thereby eliminating human error.
+                  <br>
+                  • You can view inventory results in a sophisticated and interactive report.
+                  <br>
+                <p style="color: black;text-align: left;">Pitfalls of a self-monitoring system</p>
+                <p style="text-align: left;"> Most inventory management systems are end-to-end and incorporate a
+                  self-monitoring system. The fundamental problem with a self-monitoring system is that if the inventory
+                  system has a bug, factory fault, or is corrupted, the self-monitoring system could also be faulty.
+                  <br>
+                  In addition, most inventory management systems allow users to set inventory goals and benchmarks. As a
+                  result, the inventory benchmark is subject to prejudice and prone to human error. <br>
+                  Our solution systematically generates a new inventory benchmark using your historical data. The
+                  benchmark is then used to provide real-time indicators for each inventory line item, as well as alerts
+                  regarding critical inventory items that require urgent attention. <br>
+                </p>
+
+                <p style="color: black;text-align: left;">Product Functionalities</p>
+                <p style="text-align: left;">• Quick view of under-stocked and over-stocked items <br>
+                  • Drill-downs on each inventory item to view more detailed information <br>
+                  • Scoring of each inventory item, along with Rand values, based on an inventory count <br>
+                  <br> <br>
+
+
+                  This simple, but smart, tool has helped our customers to achieve enormous cash savings and improve
+                  operational efficiencies.
+                </p>
+
+                </p>
+
+                <div class="col-xs-18 col-md-9 col-lg-12 text-center">
+                  <button type="button" class="button float-right btn-lg" a href="contact.html">Plans and
+                    Pricing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 2-->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close" style="align-items: left;">
+          <span aria-hidden="true" style="align-items: left;"><i class="fas fa-times"
+              style="align-items: left;"></i></span>
+        </button>
+        <div class="modal-body text-center modal_background">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-12">
+                <!-- Portfolio Modal - Title-->
+                <h2 style="color:white;">BI Assessment Landscape</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon" style="color:rgb(132, 204, 103);"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="images/inventoryy.jpg" width=50%
+                  height=50% /><!-- Portfolio Modal - Text-->
+                <p style="color:black;text-align: left;">What is a BI Landscape Assessment?</p>
+                <p style="text-align: left;"> The BI Landscape Assessment is a strategy and maturity assessment
+                  implemented to determine the overall success of your organisation's BI environment. Existing BI facets
+                  of the organisation are examined and measured including your data structures, data management and
+                  technologies. Our primary goal is to ensure that your core business is supported by your BI strategy.
+                  The assessment will reveal weak points, focus areas and opportunities to improve your degree of
+                  competitiveness.</p>
+
+                <p style="color: black;text-align: left;">Why do I need a BI Landscape Assessment?</p>
+                <p style="text-align: left;"> Far too often, an organisation’s data is poorly understood and maintained
+                  in siloed environments. It is critical that you are empowered to not only have the right BI
+                  technologies at the right time, but that you understand the intricacies of the technologies and its
+                  management in order to stay relevant to the market. Furthermore, the global pressures of today contend
+                  for a smart BI environment equipped with enhanced security. <br>
+                  We strive optimise your operational efficiency through a robust assessment that will provide
+                  measurable progress for the client. In addition, multiple recommendations will be provided from our
+                  leading industry experts.
+                </p>
+                <br>
+                <p style="color: black;text-align:left;"> What will be assessed?</p>
+                <p style="text-align: left;"> The areas of analysis include, but are not limited to:</p>
+                <p style="text-align: left;font-style: italic;"> Business analysis</p>
+                <p style="text-align: left;">• Organisational Strategy <br>
+                  • BI and Data Strategy <br>
+                  • Current and Wishlist User Cases <br>
+                  • Pain Points and Challenges <br>
+                  • Stakeholder Requirements <br>
+                  • Business Requirements <br>
+                  • Data Governance and Management <br>
+                  • The Need for Automation <br>
+                </p>
+
+                <p style="text-align: left;font-style: italic;"> Technical analysis</p>
+                <p style="text-align: left;">• Data Sources <br>
+                  • Data Structures <br>
+                  • ETL/ELT Structures <br>
+                  • Data Quality and Rules <br>
+                  • Data Reporting <br>
+                  • Data Security <br>
+                  • Current technologies <br>
+
+                  The BI Landscape assessment covers a wide and in-depth scope of BI forensics. This comes from
+                  Dimension Data’s years of experience working with technology solutions. We do not only understand
+                  technology, but we also understand how to unite people with it.
+                </p>
+                <br>
+                <div class="col-xs-18 col-md-9 col-lg-12 text-center">
+                  <button type="button" class="button float-right btn-lg" a href="contact.html">Plans and
+                    Pricing</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 3-->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus
+                  Tent</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="images/inventoryy.jpg" alt="" />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close
+                  Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 4-->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">
+                  Controller</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="images/inventoryy.jpg" alt="" />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close
+                  Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio Modal 5-->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Locked
+                  Safe</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="images/inventoryy.jpg" alt="" />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close
+                  Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Modal 6-->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog"
+    aria-labelledby="portfolioModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><i class="fas fa-times"></i></span>
+        </button>
+        <div class="modal-body text-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <!-- Portfolio Modal - Title-->
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Submarine
+                </h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                  <div class="divider-custom-line"></div>
+                  <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                  <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="images/inventoryy.jpg" alt="" />
+                <!-- Portfolio Modal - Text-->
+                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam
+                  nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae?
+                  Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <button class="btn btn-primary" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Close
+                  Window</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <div class="footer">
+    <p>For any inquiries, please contact: support@za.didata.com | 0115752222</span></p>
+    <p><i class="fab fa-linkedin-in"></i> &emsp; <i class="fab fa-twitter"></i> &emsp; <i class="fab fa-facebook-f"></i>
+      &emsp; <i class="fab fa-youtube"></i> &emsp; <i class="fab fa-instagram" ;style="width=20% height=20%"></i></p>
+    <p class="mb-0">Copyright &copy; 2020 Dimension Data &nbsp; &nbsp; &nbsp; <a
+        href="https://www.dimensiondata.com/en-gb/about-us/transformation-at-dimension-data" target="_blank"
+        rel="noopener noreferrer"> Transformation </a>|</span> <span> </span>
+      <a href="https://www.dimensiondata.com/en-gb/legal" target="_blank" rel="noopener noreferrer"> Legal</a> |<span>
+      </span>
+      <span><a href="https://www.dimensiondata.com/en-gb/cookies-statement" target="_blank"
+          rel="noopener noreferrer">Cookie policy</a></span><span> </span>
+    <p>
+      <a href="index.html"><img src="images/ddlogo.png" width="25" style="align-content: left;" class="img-fluid"></a>
+    </p>
+    </p>
+  </div>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="88px" height="88px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#33333d" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#33333d" /></svg></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Bootstrap core JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+  <!-- Third party plugin JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <!-- Contact form JS-->
+  <script src="assets/mail/jqBootstrapValidation.js"></script>
+  <script src="assets/mail/contact_me.js"></script>
+  <!-- Core theme JS-->
+  <script src="js/scripts.js"></script>
+
+</body>
+
+</html>

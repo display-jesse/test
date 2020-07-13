@@ -1,1 +1,618 @@
-<h2>hello<h2>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+     <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+<!-- Font Awesome icons (free version)-->
+<script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+<!-- Google fonts-->
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+<!-- Core theme CSS (includes Bootstrap)-->
+<link href="css/styles.css" rel="stylesheet" />
+<!-- Custom styles for this template -->
+<link href="css/business-casual.min.css" rel="stylesheet">
+
+<style>
+  .button {
+  background-color: #10d617; /* Green */
+  border: none;
+  color: white;
+  padding: 6px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button {border-radius: 20px;}
+
+      .footer {
+         position: relative;
+         left: 0;
+         bottom: 0;
+         width: 100%;
+         background-color: rgb(255,255,255);
+         color:black;
+         text-align: center;
+      }
+        body {
+          font-family: Calibri Light;
+        }
+    .a-section {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        height: 50%;
+    }
+    .a-section img{
+        margin-top: 35%;
+        z-index: 1;
+        opacity: 0.75;
+    }
+    .video-container{
+        position: absolute;
+        top: -10;
+        left: 0;
+        width: 100%;
+    }
+        .flip-card {
+          background-color: transparent;
+          width: 250px;
+          height: 250px;
+          perspective: 1000px;
+        }
+        
+        .flip-card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          transition: transform 0.6s;
+          transform-style: preserve-3d;
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+        
+        .flip-card:hover .flip-card-inner {
+          transform: rotateY(180deg);
+        }
+        
+        .flip-card-front, .flip-card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+        }
+        
+        .flip-card-front {
+          background-color: #bbb;
+          color: black;
+        }
+        
+        .flip-card-back {
+          background-color: #F9F5F4;
+          color: black;
+          transform: rotateY(180deg);
+        }
+
+       .fa {font-size:50px;}
+      .ftco-navbar{
+        position:scroll;
+        left:0;
+        bottom:0;
+        width:100%;
+        background-color: rgb(44,56,70);
+        color: white;
+        text-align: left;
+      }
+    .popular .row{
+        vertical-align: middle;
+        padding-bottom: 1%;
+        background-color: rgba(44,56,70);
+    }
+    .popular .row h4{
+        color: #fff;
+        vertical-align: middle;
+        text-align: center;
+        height: 7.5rem;
+        padding-top: 13%;
+        width: 100%;
+        background-image:  url('https://star-name-registry.co.za/themes/star-name-registry/assets/img/placeholder.jpg') ;
+    }
+    .carouselButton {
+      background-color: rgb(132, 204, 103);
+    }
+
+    .controls-top {
+      align-items: center;
+      color: white;
+
+    }
+
+    .carouselCard {
+      width: 375px;
+      height: 500px;
+    }
+
+    .carousel-control-prev {
+      margin-left: -135px;
+    }
+
+    .carousel-control-next {
+      margin-right: -130px;
+    }
+    </style>
+    
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-dark" id="ftco-navbar">
+      <a class="navbar-brand" href="index.html"><img src="images/ddlogo.png" width="25%" class="img-fluid"></a>
+  		<div class="container">
+  			<div class="row m-auto">
+  				<div class="col-12 w-100 text-left">
+  					<a class="navbar-brand w-100" href="index.html" style="font-display: Sans Pro Light;">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data Services</a>
+			      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+			        <span class="oi oi-menu"></span> Menu
+			      </button>
+  				</div>
+  				<div class="col-10 w-80 text-center" style="font-size: large;">
+  					<div class="collapse navbar-collapse" id="ftco-nav">
+			        <ul class="navbar-nav  text-left" style="color:rgb(128, 240, 15);" >
+                <li class="nav-item active"><a href="index.html" class="nav-link" style="color:rgb(128, 240, 15);">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Our Offerings</a></li>
+			          <li class="nav-item"><a href="blog-single.html" class="nav-link">Products</a></li>
+                <li class="nav-item dropdown"><a href="classes.html" class="nav-link">Product Packages</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Imagery</a></li>
+                    <li><a href="#">Styles/Principles</a></li>
+                    <li><a href="#">Dimenstion Data Logo</a></li>
+                    <li><a href="#">Client Logo</a></li>
+                  </ul>
+                </li>
+			          <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+			        </ul>
+			      </div>
+  				</div>
+  			</div>
+  		</div>
+	  </nav>
+ 
+    <!-- END nav -->
+    <section class="a-section">
+      <img width="40%" src="images/quote4.png"></img>
+        <div class="video-container">
+          <video width="100%" autoplay loop muted><source src="images/globe.mp4" type="video/mp4"></video>
+        </div>
+  </section>
+
+		<section class="ftco-section">
+			<div class="container">
+        <h2 class="mb-4" style="text-align:center" style="font-family: sans pro;">Our Solutions</h2>
+				<div class="row justify-content-center mb-5 pb-2">
+        </div>	
+				<div class="row">
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/industry.jfif);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3><a href="solutions.html">Solutions By Industry</a></h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/coud.jfif);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3 style="font-family: sans pro light;">Cloud Based Solutions</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/onpremise.jpg);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3 style="font-family: sans pro light;">On Premise Solutions</h3>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3 ftco-animate">
+						<div class="staff">
+							<div class="img-wrap d-flex align-items-stretch">
+								<div class="img align-self-stretch" style="background-image: url(images/hybrid.png);"></div>
+							</div>
+							<div class="text pt-3 text-center">
+								<h3 style="font-family: sans pro light;">Hybrid Solution</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+      </div>
+      </div>
+    </section>
+
+      <!-- Carousel-->
+  <div class="container my-4">
+    <div class="heading-section ftco-animate text-center">
+      <h3 class="subheading text-center">Customer Testimonials:</h3>
+    </div>
+
+    <hr class="my-4">
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="carousel-control-prev" style="float: left; color: black;" href="#multi-item-example"
+          data-slide="prev"><i class="fa fa-chevron-left" style="font-size:x-large"></i></a>
+
+        <a class="carousel-control-next" style="float: right; color:black" href="#multi-item-example"
+          data-slide="next"><i class="fa fa-chevron-right" style="font-size:x-large"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+
+          <!--Tour de France-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/tdf_yellow.jpg.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">"This technological development will enable a better analysis of the race,
+                    highlight the race tactics, and also show how essential each rider’s role is within his team."</p>
+
+                  <br>
+                  <br>
+
+                  <h5 class="card-title">Christian Prudhomme, </h5>
+                  <h6> Tour de France, Director</h6>
+                  <!-- <a class="btn btn-primary"  style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!--Murray and Roberts-->
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/Murray.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">"Dimension Data has successfully delivered the services and M&R highly recommend
+                    them for Business Intelligence Implementation Services."</p>
+
+                  <br>
+                  <br>
+                  <br>
+
+                  <h5 class="card-title">Hilton Currie, </h5>
+                  <h6> Murray & Roberts, Group IT Executive </h6>
+                  <!-- <a class="btn btn-primary" style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a> -->
+                </div>
+              </div>
+            </div>
+
+            <!--SA Tourism-->
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/SA-Tourism.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">“Dimension Data has demonstrated a high quality of service delivery.”</p>
+
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+                  <h5 class="card-title">Thabo Maduna, </h5>
+                  <h6> South African Tourism, General Manager</h6>
+                  <!-- <a class="btn btn-primary " style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.First slide-->
+
+        <!--Second slide-->
+        <div class="carousel-item">
+
+          <!--ArcelorMittal-->
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/ArcelorMittal.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">“Our brief was a complicated science endeavour. Dimension Data simplified it and
+                    returned with the concept I<sup>2</sup> and immediately we knew they were onto something.”</p>
+                  <br>
+                  <br>
+                  <h5 class="card-title">Customer, </h5>
+                  <h6> ArcelorMittal</h6>
+                  <!--<a class="btn btn-primary " style="background-color: rgb(132, 204, 103); border:0px; float:right;"> View More</a>-->
+                </div>
+              </div>
+            </div>
+
+            <!--BKB-->
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/BKB-LOGO.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">"Using Power BI solutions residing on Azure, Dimension Data has successfully
+                    enabled BKB to monitor meaningful financial statistics and trends in our business at the touch of a
+                    button, greatly reducing the time required to make and execute important business decisions.”</p>
+
+                  <h5 class="card-title">Jaco Maas, </h5>
+                  <h6 style="display:inline-block"> BKB, Operations Director</h6>
+
+                  <a class="btn btn-primary view-pdf" href="documents/BKB.pdf" target="_blank"
+                    rel="noopener noreferrer"
+                    style="color:white; background-color: rgb(132, 204, 103); border:0px; float:right;">View More
+                  </a>
+
+                   <!-- BKB_Modal -->
+ <!--                 <div id="BKB_Modal" class="portfolio-modal modal fade " tabindex="-1" role="dialog"
+                    aria-labelledby="BKB_Modal" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document"> -->
+
+                      <!-- Modal content-->
+ <!--                      <div class="modal-content">
+
+                        <div class="modal-body">
+
+                          <embed src="documents/BKB.pdf" frameborder="0" width="100%" height="700px">
+
+                          <div class="modal-footer">
+                            <button type=" button" class="btn btn-default "
+                              data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+
+            <!--MIBFA-->
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2 carouselCard">
+                <img class="card-img-top" src="images/MIBFA-logo.png" alt="Card image cap">
+                <div class="card-body">
+
+                  <p class="card-text">"Microsoft SQL Server managed services enables MIBFA’s databases to be available
+                    99.9% of the time.”</p>
+                  <br>
+                  <br>
+                  <br>
+                  <h5 class="card-title">Customer, </h5>
+                  <h6 style="display:inline-block"> MIBFA</h6>
+                  <a class="btn btn-primary view-pdf" href="documents/MIBFA.pdf" target="_blank"
+                    rel="noopener noreferrer"
+                    style="color:white; background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a>
+
+                  <!-- MIBFA_Modal -->
+                  <div id="MIBFA_Modal" class="portfolio-modal modal fade " tabindex="-1" role="dialog"
+                    aria-labelledby="MIBFA_Modal" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+
+                      <!-- Modal content-->
+                      <div class="modal-content">
+
+                        <div class="modal-body">
+
+                          <embed src="documents/MIBFA.pdf" frameborder="0" width="100%" height="700px">
+
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--/.Second slide-->
+
+        <!--Third slide-->
+        <!--       <div class="carousel-item">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(53).jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary" style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(45).jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary" style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 clearfix d-none d-md-block">
+              <div class="card mb-2">
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Food/4-col/img%20(51).jpg"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title">Card title</h4>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                  <a class="btn btn-primary" style="background-color: rgb(132, 204, 103); border:0px; float:right;">View More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>-->
+        <!--/.Third slide-->
+
+      </div>
+      <!--/.Slides-->
+
+    </div>
+    <!--/.Carousel Wrapper-->
+
+
+
+  </div>
+
+    <h1 style="text-align: center;">Popular products</h1>
+		<section class="popular" style="background-color: rgb(44, 56, 70);"><br>
+      <div class="row">
+        <div class="col-md-2">
+          <div>
+            <h4>Data Warehouse</h4>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <h4>Reporting</h4>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <h4>Inventory Index</h4>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <h4>BI Readiness Assessment</h4>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div>
+            <h4>Timesheet Analytics</h4>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div >
+            <h4>Data Lake</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+<br>
+    
+<div class="footer">
+  <p>For any inquiries, please contact: support@za.didata.com | 0115752222</span></p>
+  <p><i class="fab fa-linkedin-in"></i> &emsp; <i class="fab fa-twitter"></i> &emsp; <i class="fab fa-facebook-f"></i> &emsp; <i class="fab fa-youtube"></i> &emsp; <i class="fab fa-instagram";style="width=20% height=20%"></i></p>
+  <p class="mb-0">Copyright &copy; 2020 Dimension Data &nbsp; &nbsp; &nbsp; <a href= "https://www.dimensiondata.com/en-gb/about-us/transformation-at-dimension-data" target="_blank" rel="noopener noreferrer"> Transformation </a>|</span> <span> </span> 
+    <a href = "https://www.dimensiondata.com/en-gb/legal" target="_blank" rel="noopener noreferrer"> Legal</a> |<span> </span> 
+    <span><a href="https://www.dimensiondata.com/en-gb/cookies-statement" target="_blank" rel="noopener noreferrer">Cookie policy</a></span><span> </span> <p>
+    <a href="index.html"><img src="images/ddlogo.png" width="25" style="align-content: left;" class="img-fluid"></a></p>
+  </p>
+</div>
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="88px" height="88px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#33333d"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#33333d"/></svg></div>
+  
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+   <!-- Bootstrap core JS-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+   <!-- Third party plugin JS-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+   <!-- Contact form JS-->
+   <script src="assets/mail/jqBootstrapValidation.js"></script>
+   <script src="assets/mail/contact_me.js"></script>
+   <!-- Core theme JS-->
+   <script src="js/scripts.js"></script>
+    
+  </body>
+</html>
